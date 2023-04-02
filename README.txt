@@ -2,7 +2,9 @@ EuLibUSB
 Andy P.
 Icy Viking Games
 
-LibUSB wrapper for Euphoria
+LibUSB wrapper for Euphoria.
+
+LibUSB is a library for sending data to and from USB devices. 
 
 Copyright(c) EuLibUSB 2023
 
