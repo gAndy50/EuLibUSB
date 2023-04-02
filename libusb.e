@@ -15,7 +15,7 @@ atom usb = 0
 
 ifdef WINDOWS then
 	usb = open_dll("libusb-1.0.dll")
-	elsifdef LINUX or FREEBSD then
+	elsifdef LINUX or FREEBSD or OSX then
 	usb = open_dll("libusb-1.0.so")
 end ifdef
 
@@ -952,4 +952,4 @@ export constant xlibusb_set_option = define_c_func(usb,"+libusb_set_option",{C_P
 public function libusb_set_option(atom ctx,atom opt)
 	return c_func(xlibusb_set_option,{ctx,opt})
 end function
-­953.44
+­18.33
